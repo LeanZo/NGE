@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.header,
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    z-index: 100;
+    margin-top: -70px;
+}
+
+.content {
+    margin-top: -100px;
+    z-index: 1;
+}
+
+#eva-logo {
+    transform: scale(0.7);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.eva {
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.eva img {
+    display: block;
+    transition: .15s;
+}
+
+.eva:hover img {
+    transform: scale(1.2) translate(0px, 40px);
+}
+
+.jogomemoria {
+    width: 90%;
+    height: 100%;
+}
+
+.carta-div {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 1px;
+    perspective: 1000px;
+}
+
+.carta {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.carta-verso,
+.carta-frente {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: transparent;
+}
+
+.carta-frente {
+    transform: rotateY(180deg);
+}
+
+.carta-verso img,
+.carta-frente img {
+    width: 150px;
+    height: 150px;
+}
