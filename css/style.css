@@ -9,8 +9,9 @@ body {
 .header,
 .content {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 100%;
 }
 
@@ -21,7 +22,7 @@ body {
 }
 
 .content {
-    margin-top: -100px;
+    margin-top: -80px;
     z-index: 1;
 }
 
@@ -29,24 +30,47 @@ body {
     transform: scale(0.7);
 }
 
+#eva-logo:hover {
+    transform: scale(0.8);
+}
+
 a {
     color: white;
     text-decoration: none;
 }
 
+a:hover {
+    transform: scale(1.1);
+}
+
 .eva {
     display: inline-block;
+    position: relative;
     overflow: hidden;
     margin-left: 2px;
     margin-right: 2px;
+    cursor: pointer;
 }
 
-.eva img {
+.eva .evaimg {
     display: block;
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
     transition: .15s;
 }
 
-.eva:hover img {
+.eva .evainfo {
+    display: block;
+    position: relative;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    transition: .15s;
+}
+
+.evaimg:hover {
     transform: scale(1.2) translate(0px, 40px);
 }
 
@@ -88,4 +112,18 @@ a {
 .carta-frente img {
     width: 150px;
     height: 150px;
+}
+
+.p1 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+}
+
+.aimage {
+    clear: both;
+    margin: 2px;
+    margin-left: 27%;
 }

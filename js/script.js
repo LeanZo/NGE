@@ -111,3 +111,15 @@ function cartaclick(cartadivid) {
         }
     }
 }
+
+function evaclick(evaid) {
+    var eva = document.getElementById(evaid);
+
+    if (eva.getElementsByTagName('img')[0].style.transform != 'translate(0px, 580px)') {
+        eva.getElementsByTagName('img')[0].style.transform = 'translate(0px, 580px)';
+        eva.getElementsByTagName('img')[1].style.transform = 'translate(0px, -580px)';
+    } else {
+        eva.getElementsByTagName('img')[0].style.transform = 'translate(0px, 0px)';
+        eva.getElementsByTagName('img')[1].style.transform = 'translate(0px, 0px)';
+    }
+}
