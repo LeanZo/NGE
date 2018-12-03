@@ -26,6 +26,23 @@ body {
     z-index: 1;
 }
 
+.footer {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pleft {
+    margin-top: 0px;
+    float: left;
+}
+
+.pright {
+    margin-top: 0px;
+    float: right;
+}
+
 #eva-logo {
     transform: scale(0.7);
 }
